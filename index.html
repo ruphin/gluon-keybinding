@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<script type="module" src="src/gluon-keybinding.js"></script>
+
+<style>
+  body {
+    margin: 0;
+    background: #223;
+  }
+</style>
+
+<!-- build:remove -->
+<span id="browser-sync-binding"></span>
+<!-- endbuild -->
+
+<a href="#up">
+  <gluon-keybinding key='ArrowUp'></gluon-keybinding>
+</a>
+
+
+<a href="#down">
+  <gluon-keybinding key='ArrowDown'></gluon-keybinding>
+</a>
+
+<a href="#right">
+  <gluon-keybinding key='ArrowRight'></gluon-keybinding>
+</a>
+
+<a href="#left">
+  <gluon-keybinding key='ArrowLeft'></gluon-keybinding>
+</a>
+
+<gluon-keybinding id="keyListener" key='a'></gluon-keybinding>
+
+<script>
+  const clicky = document.getElementById("keyListener");
+  clicky.addEventListener('click', () => {
+    console.log("We clicked the clicky!")
+  });
+
+</script>
