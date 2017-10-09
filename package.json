@@ -20,5 +20,6 @@
     "build": "gulp",
     "dev": "gulp serve",
     "publish": "git add gluon-keybinding.js"
-  }
+  },
+  "version": "0.0.1"
 }
