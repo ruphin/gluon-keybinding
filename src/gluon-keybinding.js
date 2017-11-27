@@ -24,7 +24,7 @@ const handleKeydown = event => {
 
 window.addEventListener('keydown', handleKeydown, true);
 
-class GluonKeybinding extends GluonElement {
+export class GluonKeybinding extends GluonElement {
   static get observedAttributes() {
     return ['key', 'override'];
   }
