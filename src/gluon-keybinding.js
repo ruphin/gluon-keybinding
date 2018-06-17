@@ -1,4 +1,4 @@
-import { GluonElement } from '../gluonjs/gluon.js';
+import { GluonElement } from '../gluon/gluon.js';
 
 const registeredElements = {};
 
