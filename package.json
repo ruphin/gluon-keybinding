@@ -23,27 +23,19 @@
     "access": "public"
   },
   "scripts": {
-    "build": "cp src/*.js . && rollup -c",
-    "dev": "browser-sync start --config browsersync.config.js",
+    "dev": "vite",
+    "build": "vite build && vite build --mode umd",
+    "test": "vitest run --passWithNoTests",
+    "prepublishOnly": "npm run build",
     "release": "np"
   },
   "dependencies": {
     "@gluon/gluon": "^2.5.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-polyfill": "^6.26.0",
-    "browser-sync": "^2.24.7",
-    "np": "^2.20.1",
-    "rollup": "^0.55.1",
-    "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-commonjs": "^8.3.0",
-    "rollup-plugin-cleanup": "^3.0.0",
-    "rollup-plugin-filesize": "^1.5.0",
-    "rollup-plugin-includepaths": "^0.2.2",
-    "rollup-plugin-node-resolve": "^3.0.2",
-    "rollup-plugin-terser": "^1.0.1"
-  }
+    "np": "^12.1.1",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  },
+  "type": "module"
 }

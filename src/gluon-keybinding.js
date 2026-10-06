@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-import { GluonElement } from '../gluon/gluon.js';
+import { GluonElement } from '@gluon/gluon';
 
 const registeredElements = {};
 
